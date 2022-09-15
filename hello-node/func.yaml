@@ -1,0 +1,25 @@
+specVersion: 0.25.0
+name: hello-node
+namespace: ""
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+build: local
+git: 
+  url: https://github.com/jrangelramos/hello-func.git
+  contextDir: hello-node
+buildpacks: []
+builder: ""
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-09-15T19:07:48.273270627-03:00
+invocation:
+  format: http
